@@ -2,7 +2,7 @@ package com.chillingvan.canvasglsample.offscreen.camera;
 
 import android.graphics.SurfaceTexture;
 import android.opengl.GLES11Ext;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.chillingvan.canvasgl.ICanvasGL;
 import com.chillingvan.canvasgl.OffScreenCanvas;

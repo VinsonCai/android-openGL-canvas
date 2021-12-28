@@ -22,7 +22,7 @@ package com.chillingvan.canvasglsample.textureView;
 
 import android.hardware.Camera;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
+import androidx.annotation.RequiresApi;
 import android.util.Log;
 import android.util.Size;
 

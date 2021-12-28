@@ -21,7 +21,7 @@
 package com.chillingvan.canvasgl;
 
 import android.graphics.SurfaceTexture;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.chillingvan.canvasgl.glcanvas.BasicTexture;
 import com.chillingvan.canvasgl.glcanvas.RawTexture;

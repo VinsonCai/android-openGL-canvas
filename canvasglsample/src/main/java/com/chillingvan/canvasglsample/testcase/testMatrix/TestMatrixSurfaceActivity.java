@@ -1,7 +1,6 @@
 package com.chillingvan.canvasglsample.testcase.testMatrix;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.SurfaceTexture;
 import android.hardware.camera2.CameraAccessException;
@@ -11,9 +10,9 @@ import android.hardware.camera2.CameraManager;
 import android.hardware.camera2.CaptureRequest;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Surface;
 import android.view.View;
 import android.widget.Toast;
@@ -137,7 +136,7 @@ public class TestMatrixSurfaceActivity extends AppCompatActivity {
     @SuppressLint("MissingPermission")
     private void openCamera(int width, int height) {
         String cameraId = Camera2Util.setUpCameraOutputs(getApplicationContext(), width, height);
-        Activity activity = this;
+        AppCompatActivity activity = this;
         CameraManager manager = (CameraManager) activity.getSystemService(Context.CAMERA_SERVICE);
         try {
             manager.openCamera(cameraId, new CameraDevice.StateCallback() {

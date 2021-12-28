@@ -1,6 +1,5 @@
 package com.chillingvan.canvasglsample.screenRecord;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.hardware.display.DisplayManager;
@@ -8,7 +7,8 @@ import android.hardware.display.VirtualDisplay;
 import android.media.projection.MediaProjection;
 import android.media.projection.MediaProjectionManager;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.Surface;
 
@@ -28,12 +28,12 @@ public class ScreenRecordHelper {
     private MediaProjection mMediaProjection;
     private RawTexture mRawTexture;
     private Surface mSurface;
-    private Activity mActivity;
+    private AppCompatActivity mActivity;
     private int mScreenDensity;
     private int mActivityResultCode;
     private Intent mActivityResultData;
 
-    public void init(Activity activity, GLTexture glTexture) {
+    public void init(AppCompatActivity activity, GLTexture glTexture) {
         mActivity = activity;
         mSurface = new Surface(glTexture.getSurfaceTexture());
         mRawTexture = glTexture.getRawTexture();

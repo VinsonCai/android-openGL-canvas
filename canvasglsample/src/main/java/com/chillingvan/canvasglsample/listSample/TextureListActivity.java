@@ -3,9 +3,9 @@ package com.chillingvan.canvasglsample.listSample;
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.chillingvan.canvasgl.glview.texture.GLMultiTexConsumerView;
 import com.chillingvan.canvasgl.glview.texture.GLMultiTexProducerView;

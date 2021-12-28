@@ -24,7 +24,7 @@ import android.graphics.Bitmap;
 import android.graphics.RectF;
 import android.opengl.GLES20;
 import android.opengl.Matrix;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.chillingvan.canvasgl.ICanvasGL;
 import com.chillingvan.canvasgl.glcanvas.BasicTexture;

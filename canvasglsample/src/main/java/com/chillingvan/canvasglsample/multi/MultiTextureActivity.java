@@ -2,7 +2,6 @@ package com.chillingvan.canvasglsample.multi;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Point;
 import android.graphics.SurfaceTexture;
@@ -15,8 +14,8 @@ import android.hardware.camera2.CaptureRequest;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Surface;
 import android.view.View;
@@ -160,7 +159,7 @@ public class MultiTextureActivity extends AppCompatActivity {
     @SuppressLint("MissingPermission")
     private void openCamera(int width, int height) {
         setUpCameraOutputs(width, height);
-        Activity activity = this;
+        AppCompatActivity activity = this;
         CameraManager manager = (CameraManager) activity.getSystemService(Context.CAMERA_SERVICE);
         try {
             manager.openCamera(mCameraId, new CameraDevice.StateCallback() {

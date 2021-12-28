@@ -2,8 +2,8 @@ package com.chillingvan.canvasgl.textureFilter;
 
 import android.graphics.Bitmap;
 import android.opengl.GLES20;
-import android.support.annotation.FloatRange;
-import android.support.annotation.NonNull;
+import androidx.annotation.FloatRange;
+import androidx.annotation.NonNull;
 
 import com.chillingvan.canvasgl.ICanvasGL;
 import com.chillingvan.canvasgl.OpenGLUtil;

@@ -20,7 +20,6 @@
 
 package com.chillingvan.canvasglsample.offscreen;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -28,7 +27,8 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.SurfaceTexture;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import com.chillingvan.canvasgl.ICanvasGL;
@@ -42,7 +42,7 @@ import com.chillingvan.canvasgl.glview.texture.gles.EglContextWrapper;
 import com.chillingvan.canvasgl.glview.texture.gles.GLThread;
 import com.chillingvan.canvasglsample.R;
 
-public class OffScreenActivity extends Activity {
+public class OffScreenActivity extends AppCompatActivity {
 
     private ImageView imageView;
     private OffScreenCanvas offScreenCanvas;

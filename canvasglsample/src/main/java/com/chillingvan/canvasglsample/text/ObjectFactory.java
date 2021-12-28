@@ -1,7 +1,7 @@
 package com.chillingvan.canvasglsample.text;
 
-import android.support.annotation.Nullable;
-import android.support.v4.util.Pools;
+import androidx.annotation.Nullable;
+import androidx.core.util.Pools;
 
 import java.util.ArrayList;
 import java.util.Collections;
